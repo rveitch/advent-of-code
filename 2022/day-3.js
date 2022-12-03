@@ -24,7 +24,6 @@ function solvePartOne() {
     return totalScore;
   }, 0);
 }
-console.log('Day 3 Answer Pt. 1:', solvePartOne());
 
 function solvePartTwo() {
   const groupedRucksacks = _.chunk(input, 3).map((groups) => {
@@ -37,4 +36,8 @@ function solvePartTwo() {
     return totalScore;
   }, 0);
 }
+
+console.time('Execution Time');
+console.log('Day 3 Answer Pt. 1:', solvePartOne());
 console.log('Day 3 Answer Pt. 2:', solvePartTwo());
+console.timeEnd('Execution Time');
