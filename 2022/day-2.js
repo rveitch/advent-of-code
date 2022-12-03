@@ -1,6 +1,7 @@
 const inputDataset = require('./input/day-2-input');
 
 const test = false;
+if (test) console.log('---TESTING---');
 const input = test ? inputDataset.test : inputDataset.data;
 
 const shapeCoding = {
@@ -17,13 +18,13 @@ const shapePoints = {
     value: 1,
     'Paper': 0,
     'Rock': 3,
-    'Scissors': 6,  // Won - 6
+    'Scissors': 6,
   },
   'Paper': {
     value: 2,
     'Scissors': 0,
-    'Paper': 3,     // Draw - 3
-    'Rock': 6,      // Won - 6
+    'Paper': 3,
+    'Rock': 6,
   },
   'Scissors': {
     value: 3,
@@ -44,7 +45,7 @@ const partOneTotalScore = input.reduce((totalScore, round) => {
   return totalScore;
 }, 0);
 
-console.log('partOneTotalScore:', partOneTotalScore);
+console.log('Day 2 Answer Pt. 1:', partOneTotalScore);
 
 function determinePlayerHandShape(playerCode, opponentHand) {
   const playerAction = {
@@ -78,4 +79,4 @@ const partTwoTotalScore = input.reduce((totalScore, round) => {
   return totalScore;
 }, 0);
 
-console.log('partTwoTotalScore:', partTwoTotalScore);
+console.log('Day 2 Answer Pt. 2:', partTwoTotalScore);

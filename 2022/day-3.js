@@ -2,6 +2,7 @@ const _ = require('lodash');
 const inputDataset = require('./input/day-3-input');
 
 const test = false;
+if (test) console.log('---TESTING---');
 const input = test ? inputDataset.test : inputDataset.data;
 
 function computeSharedPriority(sharedPriorities) {
@@ -23,7 +24,7 @@ function solvePartOne() {
     return totalScore;
   }, 0);
 }
-console.log('partOne:', solvePartOne());
+console.log('Day 3 Answer Pt. 1:', solvePartOne());
 
 function solvePartTwo() {
   const groupedRucksacks = _.chunk(input, 3).map((groups) => {
@@ -36,4 +37,4 @@ function solvePartTwo() {
     return totalScore;
   }, 0);
 }
-console.log('partTwo:', solvePartTwo());
+console.log('Day 3 Answer Pt. 2:', solvePartTwo());
