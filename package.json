@@ -1,0 +1,27 @@
+{
+  "name": "advent-of-code",
+  "description": "https://adventofcode.com/",
+  "version": "1.0.0",
+  "author": "Ryan Veitch",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20.x",
+    "npm": ">=10.x"
+  },
+  "scripts": {
+    "test": "npm run test --workspaces --if-present"
+  },
+  "workspaces": [
+    "2024"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^25.7.0",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0"
+  }
+}
