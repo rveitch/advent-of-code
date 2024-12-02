@@ -14,7 +14,7 @@ export function calculateTotalDistance(list1, list2) {
 
   // Step 2: Calculate the total distance
   let totalDistance = 0;
-  for (let i = 0; i < sortedList1.length; i++) {
+  for (let i = 0; i < sortedList1.length; i += 1) {
     const distance = Math.abs(sortedList1[i] - sortedList2[i]);
     totalDistance += distance;
   }
@@ -22,6 +22,25 @@ export function calculateTotalDistance(list1, list2) {
   return totalDistance;
 }
 
+export function calculateSimilarityScore(leftList, rightList) {
+  // Create a frequency map for the right list
+  const frequencyMap = rightList.reduce((map, num) => {
+    map[num] = (map[num] || 0) + 1; // eslint-disable-line no-param-reassign
+    return map;
+  }, {});
+
+  // Calculate similarity score
+  let similarityScore = 0;
+  for (const num of leftList) { // eslint-disable-line no-restricted-syntax
+    if (frequencyMap[num]) {
+      similarityScore += num * frequencyMap[num];
+    }
+  }
+
+  return similarityScore;
+}
+
 export default {
   calculateTotalDistance,
+  calculateSimilarityScore,
 };

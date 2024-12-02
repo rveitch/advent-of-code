@@ -1,6 +1,10 @@
-import { list1, list2 } from './2024-day-1-input-data.js';
-import { calculateTotalDistance } from './2024-day-1.js';
+import { leftList, rightList } from './2024-day-1-input-data.js';
+import { calculateTotalDistance, calculateSimilarityScore } from './2024-day-1.js';
 
-const totalDistance = calculateTotalDistance(list1, list2);
+// Part 1
+const totalDistance = calculateTotalDistance(leftList, rightList);
+console.log(`Total Distance: ${totalDistance}`); // 1151792
 
-console.log(`Total Distance: ${totalDistance}`);
+// Part 2
+const similarityScore = calculateSimilarityScore(leftList, rightList);
+console.log(`Similarity score: ${similarityScore}`); // 21790168
