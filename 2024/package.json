@@ -11,7 +11,8 @@
     "test:day-3": "node --experimental-vm-modules ../node_modules/.bin/jest -i 2024-day-3.test.js",
     "test:day-4": "node --experimental-vm-modules ../node_modules/.bin/jest -i 2024-day-4.test.js",
     "test:day-5": "node --experimental-vm-modules ../node_modules/.bin/jest -i 2024-day-5.test.js",
-    "test:day-6": "node --experimental-vm-modules ../node_modules/.bin/jest -i 2024-day-6.test.js"
+    "test:day-6": "node --experimental-vm-modules ../node_modules/.bin/jest -i 2024-day-6.test.js",
+    "test:day-7": "node --experimental-vm-modules ../node_modules/.bin/jest -i 2024-day-7.test.js"
   },
   "author": "Ryan Veitch",
   "license": "ISC",
