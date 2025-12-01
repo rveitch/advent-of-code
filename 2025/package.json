@@ -1,23 +1,16 @@
 {
-  "name": "advent-of-code",
-  "description": "https://adventofcode.com/",
+  "name": "advent-of-code-2025",
   "version": "1.0.0",
+  "description": "https://adventofcode.com/2025",
+  "type": "module",
+  "scripts": {},
   "author": "Ryan Veitch",
   "license": "ISC",
-  "type": "module",
   "engines": {
     "node": ">=20.x",
     "npm": ">=10.x"
   },
-  "scripts": {
-    "test": "npm run test --workspaces --if-present"
-  },
-  "workspaces": [
-    "2024",
-    "2025"
-  ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "eslint": "8.57.0",
